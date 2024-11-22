@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 shadow-sm z-50">
+      {/* Added "shadow-sm" for the slight shadow */}
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl">☀️</span> {/* Sun emoji */}
