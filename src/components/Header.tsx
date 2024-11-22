@@ -7,7 +7,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl">☀️</span> {/* Sun emoji */}
-          <span className="font-bold text-xl font-syne">PepeMarkets</span>
+          <span className="font-bold text-xl font-syne">PepeMarket</span>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
