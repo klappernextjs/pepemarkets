@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: 'Syne', system-ui, sans-serif;
+    background-color: #F2F4F7; /* Change the background color */
   }
 }
 
