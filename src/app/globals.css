@@ -8,8 +8,8 @@
   }
 }
 
-.glass-effect {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+@layer components {
+  .glass-effect {
+    @apply bg-white/70 backdrop-blur-lg rounded-xl shadow-lg;
+  }
 }
