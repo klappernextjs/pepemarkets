@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Header = () => {
   return (
@@ -10,15 +11,15 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="/" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">📅</span> Events {/* Calendar emoji */}
-          </a>
-          <a href="/leaderboard" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">🏆</span> Leaderboard {/* Trophy emoji */}
-          </a>
-          <a href="/wallet" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">👛</span> Wallet {/* Wallet emoji */}
-          </a>
+          <Link to="/" className="flex items-center gap-2 font-syne"> {/* Link to SwapInterface */}
+            <span className="text-xl">📅</span>Events {/* Calendar emoji */}
+          </Link>
+          <Link to="/leaderboard" className="flex items-center gap-2 font-syne"> {/* Link to Leaderboard */}
+            <span className="text-xl">🏆</span>Leaderboard {/* Trophy emoji */}
+          </Link>
+          <Link to="/wallet" className="flex items-center gap-2 font-syne"> {/* Link to Wallet */}
+            <span className="text-xl">👛</span>Wallet {/* Wallet emoji */}
+          </Link>
         </nav>
         
         <button className="bg-black text-white px-6 py-2 rounded-full font-syne">
