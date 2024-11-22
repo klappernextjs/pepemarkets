@@ -10,14 +10,14 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">📅</span>Events {/* Calendar emoji */}
+          <a href="/" className="flex items-center gap-2 font-syne">
+            <span className="text-xl">📅</span> Events {/* Calendar emoji */}
           </a>
-          <a href="#" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">🏆</span>Leaderboard {/* Trophy emoji */}
+          <a href="/leaderboard" className="flex items-center gap-2 font-syne">
+            <span className="text-xl">🏆</span> Leaderboard {/* Trophy emoji */}
           </a>
-          <a href="#" className="flex items-center gap-2 font-syne">
-            <span className="text-xl">👛</span>Wallet {/* Wallet emoji */}
+          <a href="/wallet" className="flex items-center gap-2 font-syne">
+            <span className="text-xl">👛</span> Wallet {/* Wallet emoji */}
           </a>
         </nav>
         
