@@ -37,7 +37,7 @@ const SwapInterface = () => {
                 className="bg-black hover:bg-gray-800 text-white px-4 py-1 rounded-full font-medium transition-colors"
                 disabled={!tweet.trim()}
               >
-                Create an event
+                Post an event
               </button>
             </div>
           </div>
