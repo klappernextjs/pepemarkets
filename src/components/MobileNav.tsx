@@ -12,7 +12,7 @@ const MobileNav = () => {
           </Link>
           <Link to="/leaderboard" className="flex flex-col items-center gap-1"> {/* Link to Leaderboard */}
             <span className="text-xl">🏆</span> {/* Trophy emoji */}
-            <span className="text-xs font-syne">Leaderboards</span>
+            <span className="text-xs font-syne">Leaderboard</span>
           </Link>
           <Link to="/wallet" className="flex flex-col items-center gap-1"> {/* Link to Wallet */}
             <span className="text-xl">👛</span> {/* Wallet emoji */}
