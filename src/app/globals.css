@@ -5,12 +5,99 @@
 @layer base {
   html {
     font-family: 'Syne', system-ui, sans-serif;
-    background-color: #F2F4F7; /* Change the background color */
+    background-color: #F2F4F7; /* Background color */
   }
 }
 
 @layer components {
+  /* Glass effect for the event box */
   .glass-effect {
-    @apply bg-white/70 backdrop-blur-lg rounded-xl shadow-lg;
+    @apply bg-white/70 backdrop-blur-lg rounded-xl shadow-lg p-6 my-4 mx-4;
   }
+
+  /* Styling for the event box header */
+  .event-header {
+    @apply text-xl font-bold text-gray-800 mb-2;
+  }
+
+  /* Event description styling */
+  .event-description {
+    @apply text-sm text-gray-600 mb-4;
+  }
+
+  /* Progress bar for event participation */
+  .progress-bar {
+    @apply w-full h-2 bg-gray-200 rounded-full;
+  }
+
+  .progress-fill {
+    @apply h-full bg-green-500 rounded-full;
+  }
+
+  /* Buttons styling for the event box */
+  .event-buttons {
+    @apply flex space-x-4 mt-4;
+  }
+
+  .event-button {
+    @apply px-4 py-2 text-white font-semibold rounded-lg transition duration-300 ease-in-out;
+  }
+
+  /* Positive and negative bet buttons */
+  .event-button-yes {
+    @apply bg-green-500 hover:bg-green-600;
+  }
+
+  .event-button-no {
+    @apply bg-red-500 hover:bg-red-600;
+  }
+
+  /* Textarea styling for description and challenge input */
+  .textarea-input {
+    @apply w-full border-0 focus:ring-0 mt-2 text-sm placeholder-gray-400 resize-none h-12 bg-transparent font-medium;
+  }
+
+  /* Buttons for interactions (e.g., social media, image, etc.) */
+  .interaction-button {
+    @apply text-black hover:text-gray-600;
+  }
+
+  /* Post event button */
+  .post-event-button {
+    @apply bg-black hover:bg-gray-800 text-white px-4 py-1 rounded-full font-medium transition-colors;
+  }
+
+  /* Ongoing badge style */
+  .ongoing-badge {
+    @apply flex items-center space-x-2 bg-blue-100 text-blue-700 py-1 px-3 rounded-lg;
+  }
+
+  /* User avatar in event header */
+  .avatar {
+    @apply w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center text-white;
+  }
+
+  /* Event time display */
+  .event-time {
+    @apply text-sm text-gray-500;
+  }
+
+  /* Bet amount display */
+  .bet-amounts {
+    @apply flex justify-between text-sm text-gray-500 mt-4;
+  }
+
+  /* Button to trigger bet selection */
+  .bet-selection-button {
+    @apply bg-gray-100 px-4 py-2 rounded-xl font-syne;
+  }
+
+  /* Styles for opponent display */
+  .opponent-display {
+    @apply mt-2 text-sm text-gray-500;
+  }
+}
+
+@layer utilities {
+  /* Custom utilities */
 }
